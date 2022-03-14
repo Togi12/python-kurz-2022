@@ -7,10 +7,10 @@ baliky = {
 }
 
 kod_baliku = input("Jaky je kod vaseho baliku?")
-
-if baliky[kod_baliku] is True:
-    print("Balík byl předán kurýrovi.")
-elif baliky[kod_baliku] is False:
-    print("Balík zatím nebyl předán kurýrovi.")
+if kod_baliku in baliky:
+    if baliky[kod_baliku] is True:
+        print("Balík byl předán kurýrovi.")
+    elif baliky[kod_baliku] is False:
+        print("Balík zatím nebyl předán kurýrovi.")
 else:
     print("Neznámý kód balíku.")
