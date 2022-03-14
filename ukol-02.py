@@ -492,6 +492,5 @@ staty = [
 vybrany_region = input("Jaky region vás zajímá? ")
 
 for country in staty:
-    if country["region"]==vybrany_region:
-        print(staty["name"])
-
+    if country['region']==vybrany_region:
+        print(staty['name'])
