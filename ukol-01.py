@@ -8,8 +8,7 @@ baliky = {
 
 kod_baliku = input("Jaky je kod vaseho baliku?")
 
-for kod_baliku, stav in baliky.items():
-    if stav is True:
-        print ("Balík byl předán kurýrovi.")
-    else:
-        print ("Balík zatím nebyl předán kurýrovi.")
+if baliky[kod_baliku] is True:
+    print("Balík byl předán kurýrovi.")
+if baliky[kod_baliku] is False:
+    print("Balík zatím nebyl předán kurýrovi.")
