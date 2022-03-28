@@ -7,9 +7,7 @@ def phone_number (cislo:str):
     else:
         return False
 
-zadane_cislo = int(input("Zadej číslo, kam chceš zaslat zprávu: "))
-
-cislo=str(zadane_cislo)
+cislo = str(input("Zadej číslo, kam chceš zaslat zprávu: "))
 
 spravnost_cisla = phone_number (cislo)
 
@@ -19,7 +17,13 @@ if spravnost_cisla is False:
     print("Zadané číslo neexistuje.")
 
 if spravnost_cisla is True:
-    zprava = int(input("Zadej zprávu, kterou chceš odeslat: "))
+    zprava = str(input("Zadej zprávu, kterou chceš odeslat: "))
+
 
 def cena():
-    return ceil(len(int(zprava))/180*3)
+    return cena_zpravy
+
+cena_zpravy=round(len(zprava)/180*3)
+
+print("Cena zprávy je:")
+print(cena())
