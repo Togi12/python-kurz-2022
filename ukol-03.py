@@ -21,3 +21,5 @@ if spravnost_cisla is False:
 if spravnost_cisla is True:
     zprava = int(input("Zadej zprávu, kterou chceš odeslat: "))
 
+def cena():
+    return ceil(len(int(zprava))/180*3)
