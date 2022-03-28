@@ -7,6 +7,7 @@ class Auto:
 
     def pujc_auto(self):
         if self.stav is True:
+            self.stav == False
             return f"Potvrzuji zapůjčení vozidla."
         else:
             return f"Vozidlo není k dispozici."
